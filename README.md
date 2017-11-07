@@ -1,7 +1,5 @@
-#wrapperservice服务说明
-
+# wrapperservice服务说明
 wrapperservice服务把整个ps的子服务功能进行了包装. 主要的流程分为一下几个部分.
-
 
 - step1: 对召回的商品做截断
 ```c++
