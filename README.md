@@ -18,8 +18,10 @@ Filter类另外还有个函数getItemProfileFlags(), 返回一个ItemProfileFlag
 ## FilterManager
 
 - filters_: `std::map<std::string,std::shared_ptr<Filter> >`
+
   filters的map字典, key为filter的名字, value为生成的实例对象的指针.
 - bool init(&config)
+
   根据配置初始化config, context_属性
 - void Register(&name, &filter)
   注册Filter插件, 加入到filter_私有属性这个map字典里.这个函数用宏包装了一下, 在每个Filter的cpp里完成注册.
